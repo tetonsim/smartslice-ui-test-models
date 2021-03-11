@@ -8,7 +8,7 @@
                 "branch": ""
             }
         }, 
-        "type": "validation", 
+        "type": "optimization", 
         "chop": {
             "steps": [
                 {
@@ -51,16 +51,16 @@
                 "print_config": {
                     "layer_width": 0.35000000000000003, 
                     "layer_height": 0.1, 
-                    "walls": 3, 
+                    "walls": 2, 
                     "skin_orientations": [
                         45, 
                         135
                     ], 
-                    "bottom_layers": 10, 
-                    "top_layers": 10, 
+                    "bottom_layers": 5, 
+                    "top_layers": 5, 
                     "infill": {
                         "pattern": "triangle", 
-                        "density": 20, 
+                        "density": 20.0, 
                         "orientation": 45
                     }, 
                     "auxiliary": {
@@ -649,7 +649,7 @@
                         "print_bed_temperature": "60", 
                         "print_temperature": "200", 
                         "travel_speed": "150", 
-                        "time": "13:08:58", 
+                        "time": "13:14:39", 
                         "date": "25-02-2021", 
                         "day": "Thu", 
                         "initial_extruder_nr": "0"
@@ -674,7 +674,7 @@
                                     "raft_surface_jerk": "25", 
                                     "skin_material_flow": "100", 
                                     "machine_steps_per_mm_z": "50", 
-                                    "bottom_layers": "10", 
+                                    "bottom_layers": "5", 
                                     "default_material_print_temperature": "200", 
                                     "skin_outline_count": "1", 
                                     "raft_surface_layers": "2", 
@@ -698,7 +698,7 @@
                                     "jerk_support_bottom": "5", 
                                     "ooze_shield_dist": "2", 
                                     "support_infill_rate": "15", 
-                                    "top_layers": "10", 
+                                    "top_layers": "5", 
                                     "material_flush_purge_speed": "0.5", 
                                     "raft_base_speed": "20", 
                                     "acceleration_skirt_brim": "500", 
@@ -753,7 +753,7 @@
                                     "acceleration_wall_0": "500", 
                                     "wall_x_material_flow": "100", 
                                     "machine_buildplate_type": "glass", 
-                                    "initial_bottom_layers": "10", 
+                                    "initial_bottom_layers": "5", 
                                     "speed_infill": "70", 
                                     "skin_no_small_gaps_heuristic": "False", 
                                     "z_seam_corner": "z_seam_corner_inner", 
@@ -766,7 +766,7 @@
                                     "support_join_distance": "2.0", 
                                     "roofing_pattern": "lines", 
                                     "top_bottom_pattern": "lines", 
-                                    "wall_line_count": "3", 
+                                    "wall_line_count": "2", 
                                     "support_mesh": "False", 
                                     "support_bottom_material_flow": "100", 
                                     "acceleration_prime_tower": "2000", 
@@ -778,7 +778,7 @@
                                     "support_tree_branch_distance": "1", 
                                     "travel_avoid_distance": "3", 
                                     "wireframe_up_half_speed": "0.3", 
-                                    "bottom_skin_expand_distance": "0.95", 
+                                    "bottom_skin_expand_distance": "0.65", 
                                     "travel_compensate_overlapping_walls_0_enabled": "True", 
                                     "acceleration_enabled": "True", 
                                     "conical_overhang_hole_size": "0", 
@@ -832,7 +832,7 @@
                                     "speed_z_hop": "10", 
                                     "small_feature_speed_factor_0": "50", 
                                     "roofing_angles": "[ ]", 
-                                    "infill_sparse_density": "20", 
+                                    "infill_sparse_density": "20.0", 
                                     "prime_tower_size": "20", 
                                     "limit_support_retractions": "True", 
                                     "material_diameter": "2.85", 
@@ -867,7 +867,7 @@
                                     "material_end_of_filament_purge_speed": "0.5", 
                                     "switch_extruder_retraction_speed": "20", 
                                     "travel_avoid_other_parts": "True", 
-                                    "min_skin_width_for_expansion": "6.123233995736766e-17", 
+                                    "min_skin_width_for_expansion": "3.061616997868383e-17", 
                                     "gantry_height": "60", 
                                     "support_xy_distance": "0.8750000000000001", 
                                     "retraction_retract_speed": "25", 
@@ -993,7 +993,7 @@
                                     "extruder_prime_pos_y": "6", 
                                     "platform_adhesion": "0", 
                                     "support_line_distance": "2.3333333333333335", 
-                                    "top_skin_preshrink": "0.95", 
+                                    "top_skin_preshrink": "0.65", 
                                     "gradual_support_infill_step_height": "1", 
                                     "acceleration_topbottom": "500", 
                                     "wall_min_flow_retract": "False", 
@@ -1112,12 +1112,12 @@
                                     "jerk_support_infill": "15", 
                                     "slicing_tolerance": "middle", 
                                     "material_anti_ooze_retraction_speed": "5", 
-                                    "top_skin_expand_distance": "0.95", 
+                                    "top_skin_expand_distance": "0.65", 
                                     "speed_support_interface": "30", 
                                     "raft_interface_jerk": "25", 
                                     "support_connect_zigzags": "True", 
                                     "machine_name": "Ultimaker S5", 
-                                    "bottom_skin_preshrink": "0.95", 
+                                    "bottom_skin_preshrink": "0.65", 
                                     "material_maximum_park_duration": "7200", 
                                     "support_type": "everywhere", 
                                     "wipe_pause": "0", 
@@ -1188,7 +1188,7 @@
                                     "raft_surface_line_spacing": "0.35000000000000003", 
                                     "wireframe_printspeed_bottom": "5", 
                                     "machine_nozzle_id": "AA 0.4", 
-                                    "skin_preshrink": "0.95", 
+                                    "skin_preshrink": "0.65", 
                                     "wireframe_printspeed_up": "5", 
                                     "mesh_position_z": "0", 
                                     "initial_layer_line_width_factor": "120", 
@@ -1238,7 +1238,7 @@
                                     "wireframe_top_delay": "0", 
                                     "raft_interface_line_width": "0.7000000000000001", 
                                     "machine_nozzle_cool_down_speed": "0.75", 
-                                    "expand_skins_expand_distance": "0.95", 
+                                    "expand_skins_expand_distance": "0.65", 
                                     "mesh_position_y": "0", 
                                     "prime_tower_wipe_enabled": "True", 
                                     "wipe_hop_amount": "2", 
@@ -1261,7 +1261,7 @@
                                     "print_bed_temperature": "60", 
                                     "print_temperature": "200", 
                                     "travel_speed": "150", 
-                                    "time": "13:08:58", 
+                                    "time": "13:14:40", 
                                     "date": "25-02-2021", 
                                     "day": "Thu", 
                                     "initial_extruder_nr": "0"
@@ -1381,7 +1381,7 @@
         ]
     }, 
     "version": "21.0.1", 
-    "status": 7, 
+    "status": 10, 
     "results": {
         "meta": {
             "build": {
@@ -1396,13 +1396,13 @@
                 "print_config": {
                     "layer_width": 0.35000000000000003, 
                     "layer_height": 0.1, 
-                    "walls": 3, 
+                    "walls": 2, 
                     "skin_orientations": [
                         45, 
                         135
                     ], 
-                    "bottom_layers": 10, 
-                    "top_layers": 10, 
+                    "bottom_layers": 5, 
+                    "top_layers": 5, 
                     "infill": {
                         "pattern": "triangle", 
                         "density": 20, 
@@ -1413,19 +1413,1223 @@
                     {
                         "number": 0, 
                         "material": "Ultimaker PLA_bulk", 
-                        "material_volume": 6633.6083984375
+                        "material_volume": 5492.451171875
                     }
                 ], 
-                "print_time": 5820.4140625, 
+                "print_time": 4514.44677734375, 
                 "structural": {
                     "name": "", 
-                    "min_safety_factor": 192.03063093952915, 
-                    "max_displacement": 0.0009079760236898541
+                    "min_safety_factor": 169.0132177273973, 
+                    "max_displacement": 0.0011752572965300276
                 }
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 2, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 5, 
+                    "top_layers": 5, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 20, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 6547.60693359375
+                    }
+                ], 
+                "print_time": 5965.70556640625, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 351.4514806766676, 
+                    "max_displacement": 0.0008584225672851235
+                }, 
+                "modifier_meshes": [
+                    {
+                        "name": "modmesh-80", 
+                        "type": "infill", 
+                        "materials": {
+                            "extrusion": "mesh_extrusion_0", 
+                            "infill": "mod_mesh_infill", 
+                            "empty": "empty"
+                        }, 
+                        "transform": [
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ], 
+                        "print_config": {
+                            "layer_width": 0.35000000000000003, 
+                            "layer_height": 0.1, 
+                            "walls": 3, 
+                            "skin_orientations": [
+                                45, 
+                                135
+                            ], 
+                            "bottom_layers": 10, 
+                            "top_layers": 10, 
+                            "infill": {
+                                "pattern": "triangle", 
+                                "density": 20, 
+                                "orientation": 45
+                            }
+                        }, 
+                        "vertices": [
+                            [
+                                -20.0, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                -10.0
+                            ]
+                        ], 
+                        "triangles": [
+                            [
+                                0, 
+                                3, 
+                                1
+                            ], 
+                            [
+                                2, 
+                                1, 
+                                3
+                            ], 
+                            [
+                                0, 
+                                1, 
+                                4
+                            ], 
+                            [
+                                5, 
+                                4, 
+                                1
+                            ], 
+                            [
+                                1, 
+                                2, 
+                                5
+                            ], 
+                            [
+                                6, 
+                                5, 
+                                2
+                            ], 
+                            [
+                                2, 
+                                3, 
+                                6
+                            ], 
+                            [
+                                7, 
+                                6, 
+                                3
+                            ], 
+                            [
+                                3, 
+                                0, 
+                                7
+                            ], 
+                            [
+                                4, 
+                                7, 
+                                0
+                            ], 
+                            [
+                                4, 
+                                5, 
+                                7
+                            ], 
+                            [
+                                6, 
+                                7, 
+                                5
+                            ]
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 8, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 50, 
+                    "top_layers": 50, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 75, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 15074.669921875
+                    }
+                ], 
+                "print_time": 14172.630859375, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 768.9608620780176, 
+                    "max_displacement": 0.0003251179906887122
+                }, 
+                "modifier_meshes": [
+                    {
+                        "name": "modmesh-80", 
+                        "type": "infill", 
+                        "materials": {
+                            "extrusion": "mesh_extrusion_0", 
+                            "infill": "mod_mesh_infill", 
+                            "empty": "empty"
+                        }, 
+                        "transform": [
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ], 
+                        "print_config": {
+                            "layer_width": 0.35000000000000003, 
+                            "layer_height": 0.1, 
+                            "walls": 3, 
+                            "skin_orientations": [
+                                45, 
+                                135
+                            ], 
+                            "bottom_layers": 10, 
+                            "top_layers": 10, 
+                            "infill": {
+                                "pattern": "triangle", 
+                                "density": 75, 
+                                "orientation": 45
+                            }
+                        }, 
+                        "vertices": [
+                            [
+                                -20.0, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                -10.0
+                            ]
+                        ], 
+                        "triangles": [
+                            [
+                                0, 
+                                3, 
+                                1
+                            ], 
+                            [
+                                2, 
+                                1, 
+                                3
+                            ], 
+                            [
+                                0, 
+                                1, 
+                                4
+                            ], 
+                            [
+                                5, 
+                                4, 
+                                1
+                            ], 
+                            [
+                                1, 
+                                2, 
+                                5
+                            ], 
+                            [
+                                6, 
+                                5, 
+                                2
+                            ], 
+                            [
+                                2, 
+                                3, 
+                                6
+                            ], 
+                            [
+                                7, 
+                                6, 
+                                3
+                            ], 
+                            [
+                                3, 
+                                0, 
+                                7
+                            ], 
+                            [
+                                4, 
+                                7, 
+                                0
+                            ], 
+                            [
+                                4, 
+                                5, 
+                                7
+                            ], 
+                            [
+                                6, 
+                                7, 
+                                5
+                            ]
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 3, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 50, 
+                    "top_layers": 50, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 35, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 11865.8037109375
+                    }
+                ], 
+                "print_time": 11370.2763671875, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 426.1530668079235, 
+                    "max_displacement": 0.000452713646274013
+                }
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 3, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 15, 
+                    "top_layers": 15, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 80, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 14164.5361328125
+                    }
+                ], 
+                "print_time": 10435.513671875, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 589.5451030347497, 
+                    "max_displacement": 0.00041569556375121276
+                }, 
+                "modifier_meshes": [
+                    {
+                        "name": "modmesh-80", 
+                        "type": "infill", 
+                        "materials": {
+                            "extrusion": "mesh_extrusion_0", 
+                            "infill": "mod_mesh_infill", 
+                            "empty": "empty"
+                        }, 
+                        "transform": [
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ], 
+                        "print_config": {
+                            "layer_width": 0.35000000000000003, 
+                            "layer_height": 0.1, 
+                            "walls": 3, 
+                            "skin_orientations": [
+                                45, 
+                                135
+                            ], 
+                            "bottom_layers": 10, 
+                            "top_layers": 10, 
+                            "infill": {
+                                "pattern": "triangle", 
+                                "density": 85, 
+                                "orientation": 45
+                            }
+                        }, 
+                        "vertices": [
+                            [
+                                -20.0, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                -10.0
+                            ]
+                        ], 
+                        "triangles": [
+                            [
+                                0, 
+                                3, 
+                                1
+                            ], 
+                            [
+                                2, 
+                                1, 
+                                3
+                            ], 
+                            [
+                                0, 
+                                1, 
+                                4
+                            ], 
+                            [
+                                5, 
+                                4, 
+                                1
+                            ], 
+                            [
+                                1, 
+                                2, 
+                                5
+                            ], 
+                            [
+                                6, 
+                                5, 
+                                2
+                            ], 
+                            [
+                                2, 
+                                3, 
+                                6
+                            ], 
+                            [
+                                7, 
+                                6, 
+                                3
+                            ], 
+                            [
+                                3, 
+                                0, 
+                                7
+                            ], 
+                            [
+                                4, 
+                                7, 
+                                0
+                            ], 
+                            [
+                                4, 
+                                5, 
+                                7
+                            ], 
+                            [
+                                6, 
+                                7, 
+                                5
+                            ]
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 5, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 25, 
+                    "top_layers": 25, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 80, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 14365.521484375
+                    }
+                ], 
+                "print_time": 11094.09765625, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 636.7088774434703, 
+                    "max_displacement": 0.0004000015460477685
+                }
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 8, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 15, 
+                    "top_layers": 15, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 55, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 12459.7353515625
+                    }
+                ], 
+                "print_time": 10483.611328125, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 479.95556963474246, 
+                    "max_displacement": 0.0004417288263625821
+                }
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 8, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 15, 
+                    "top_layers": 15, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 50, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 12508.3984375
+                    }
+                ], 
+                "print_time": 11232.7548828125, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 624.5426540036084, 
+                    "max_displacement": 0.0004292319806335959
+                }, 
+                "modifier_meshes": [
+                    {
+                        "name": "modmesh-80", 
+                        "type": "infill", 
+                        "materials": {
+                            "extrusion": "mesh_extrusion_0", 
+                            "infill": "mod_mesh_infill", 
+                            "empty": "empty"
+                        }, 
+                        "transform": [
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ], 
+                        "print_config": {
+                            "layer_width": 0.35000000000000003, 
+                            "layer_height": 0.1, 
+                            "walls": 3, 
+                            "skin_orientations": [
+                                45, 
+                                135
+                            ], 
+                            "bottom_layers": 10, 
+                            "top_layers": 10, 
+                            "infill": {
+                                "pattern": "triangle", 
+                                "density": 55, 
+                                "orientation": 45
+                            }
+                        }, 
+                        "vertices": [
+                            [
+                                -20.0, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                -10.0
+                            ]
+                        ], 
+                        "triangles": [
+                            [
+                                0, 
+                                3, 
+                                1
+                            ], 
+                            [
+                                2, 
+                                1, 
+                                3
+                            ], 
+                            [
+                                0, 
+                                1, 
+                                4
+                            ], 
+                            [
+                                5, 
+                                4, 
+                                1
+                            ], 
+                            [
+                                1, 
+                                2, 
+                                5
+                            ], 
+                            [
+                                6, 
+                                5, 
+                                2
+                            ], 
+                            [
+                                2, 
+                                3, 
+                                6
+                            ], 
+                            [
+                                7, 
+                                6, 
+                                3
+                            ], 
+                            [
+                                3, 
+                                0, 
+                                7
+                            ], 
+                            [
+                                4, 
+                                7, 
+                                0
+                            ], 
+                            [
+                                4, 
+                                5, 
+                                7
+                            ], 
+                            [
+                                6, 
+                                7, 
+                                5
+                            ]
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 5, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 50, 
+                    "top_layers": 50, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 55, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 13835.1630859375
+                    }
+                ], 
+                "print_time": 13135.826171875, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 679.1098037995209, 
+                    "max_displacement": 0.00035563926089914565
+                }, 
+                "modifier_meshes": [
+                    {
+                        "name": "modmesh-80", 
+                        "type": "infill", 
+                        "materials": {
+                            "extrusion": "mesh_extrusion_0", 
+                            "infill": "mod_mesh_infill", 
+                            "empty": "empty"
+                        }, 
+                        "transform": [
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ], 
+                        "print_config": {
+                            "layer_width": 0.35000000000000003, 
+                            "layer_height": 0.1, 
+                            "walls": 3, 
+                            "skin_orientations": [
+                                45, 
+                                135
+                            ], 
+                            "bottom_layers": 10, 
+                            "top_layers": 10, 
+                            "infill": {
+                                "pattern": "triangle", 
+                                "density": 60, 
+                                "orientation": 45
+                            }
+                        }, 
+                        "vertices": [
+                            [
+                                -20.0, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                -10.0
+                            ]
+                        ], 
+                        "triangles": [
+                            [
+                                0, 
+                                3, 
+                                1
+                            ], 
+                            [
+                                2, 
+                                1, 
+                                3
+                            ], 
+                            [
+                                0, 
+                                1, 
+                                4
+                            ], 
+                            [
+                                5, 
+                                4, 
+                                1
+                            ], 
+                            [
+                                1, 
+                                2, 
+                                5
+                            ], 
+                            [
+                                6, 
+                                5, 
+                                2
+                            ], 
+                            [
+                                2, 
+                                3, 
+                                6
+                            ], 
+                            [
+                                7, 
+                                6, 
+                                3
+                            ], 
+                            [
+                                3, 
+                                0, 
+                                7
+                            ], 
+                            [
+                                4, 
+                                7, 
+                                0
+                            ], 
+                            [
+                                4, 
+                                5, 
+                                7
+                            ], 
+                            [
+                                6, 
+                                7, 
+                                5
+                            ]
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "print_config": {
+                    "layer_width": 0.35000000000000003, 
+                    "layer_height": 0.1, 
+                    "walls": 2, 
+                    "skin_orientations": [
+                        45, 
+                        135
+                    ], 
+                    "bottom_layers": 5, 
+                    "top_layers": 5, 
+                    "infill": {
+                        "pattern": "triangle", 
+                        "density": 95, 
+                        "orientation": 45
+                    }
+                }, 
+                "extruders": [
+                    {
+                        "number": 0, 
+                        "material": "Ultimaker PLA_bulk", 
+                        "material_volume": 15524.7255859375
+                    }
+                ], 
+                "print_time": 9952.0, 
+                "structural": {
+                    "name": "", 
+                    "min_safety_factor": 560.574652603751, 
+                    "max_displacement": 0.00041693821398572904
+                }, 
+                "modifier_meshes": [
+                    {
+                        "name": "modmesh-80", 
+                        "type": "infill", 
+                        "materials": {
+                            "extrusion": "mesh_extrusion_0", 
+                            "infill": "mod_mesh_infill", 
+                            "empty": "empty"
+                        }, 
+                        "transform": [
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            0.0, 
+                            1.0
+                        ], 
+                        "print_config": {
+                            "layer_width": 0.35000000000000003, 
+                            "layer_height": 0.1, 
+                            "walls": 3, 
+                            "skin_orientations": [
+                                45, 
+                                135
+                            ], 
+                            "bottom_layers": 10, 
+                            "top_layers": 10, 
+                            "infill": {
+                                "pattern": "triangle", 
+                                "density": 95, 
+                                "orientation": 45
+                            }
+                        }, 
+                        "vertices": [
+                            [
+                                -20.0, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                -10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                10.0
+                            ], 
+                            [
+                                -11.111111111111114, 
+                                10.0, 
+                                -10.0
+                            ], 
+                            [
+                                -20.0, 
+                                10.0, 
+                                -10.0
+                            ]
+                        ], 
+                        "triangles": [
+                            [
+                                0, 
+                                3, 
+                                1
+                            ], 
+                            [
+                                2, 
+                                1, 
+                                3
+                            ], 
+                            [
+                                0, 
+                                1, 
+                                4
+                            ], 
+                            [
+                                5, 
+                                4, 
+                                1
+                            ], 
+                            [
+                                1, 
+                                2, 
+                                5
+                            ], 
+                            [
+                                6, 
+                                5, 
+                                2
+                            ], 
+                            [
+                                2, 
+                                3, 
+                                6
+                            ], 
+                            [
+                                7, 
+                                6, 
+                                3
+                            ], 
+                            [
+                                3, 
+                                0, 
+                                7
+                            ], 
+                            [
+                                4, 
+                                7, 
+                                0
+                            ], 
+                            [
+                                4, 
+                                5, 
+                                7
+                            ], 
+                            [
+                                6, 
+                                7, 
+                                5
+                            ]
+                        ]
+                    }
+                ]
             }
         ], 
-        "status": "unknown", 
-        "feasibility_status": "unknown", 
+        "status": "solution_found", 
+        "feasibility_status": "feasible", 
+        "feasibility_result": {
+            "print_config": {
+                "layer_width": 0.35000000000000003, 
+                "layer_height": 0.1, 
+                "walls": 2, 
+                "skin_orientations": [
+                    45, 
+                    135
+                ], 
+                "bottom_layers": 100, 
+                "top_layers": 100, 
+                "infill": {
+                    "pattern": "triangle", 
+                    "density": 20, 
+                    "orientation": 45
+                }
+            }, 
+            "extruders": [
+                {
+                    "number": 0, 
+                    "material": "Ultimaker PLA_bulk", 
+                    "material_volume": 16198.705078125
+                }
+            ], 
+            "print_time": 17306.65234375, 
+            "structural": {
+                "name": "", 
+                "min_safety_factor": 780.388459746943, 
+                "max_displacement": 0.00027355652732556716
+            }
+        }, 
         "surface_mesh_results": {
             "meta": {
                 "build": {
@@ -1434,400 +2638,7 @@
                     "hash": "", 
                     "branch": ""
                 }
-            }, 
-            "steps": [
-                {
-                    "name": "step-1", 
-                    "increments": [
-                        {
-                            "time": 1.0, 
-                            "dtime": 1.0, 
-                            "node_results": [
-                                {
-                                    "name": "displacement", 
-                                    "size": 3, 
-                                    "values": [
-                                        {
-                                            "id": 0, 
-                                            "data": [
-                                                0.0003856891170248357, 
-                                                -0.00011511096686795288, 
-                                                -1.1400397798955559e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 1, 
-                                            "data": [
-                                                0.0007580288574090734, 
-                                                0.0002394342450790107, 
-                                                -1.0223576801569937e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 2, 
-                                            "data": [
-                                                0.00038569592125608886, 
-                                                -0.00011510069041535903, 
-                                                1.1368215295723198e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 3, 
-                                            "data": [
-                                                0.00038569592125608886, 
-                                                -0.00011510069041535903, 
-                                                1.1368215295723198e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 4, 
-                                            "data": [
-                                                0.0007580288574090734, 
-                                                0.0002394342450790107, 
-                                                -1.0223576801569937e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 5, 
-                                            "data": [
-                                                0.000758020680678187, 
-                                                0.00023944213386150378, 
-                                                1.0172566359762188e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 6, 
-                                            "data": [
-                                                9.360972435178785e-38, 
-                                                -2.1106145249253957e-37, 
-                                                -5.388845134095003e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 7, 
-                                            "data": [
-                                                0.0003856891170248357, 
-                                                -0.00011511096686795288, 
-                                                -1.1400397798955559e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 8, 
-                                            "data": [
-                                                9.362948648500154e-38, 
-                                                -2.11082780964081e-37, 
-                                                5.388108802999411e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 9, 
-                                            "data": [
-                                                9.362948648500154e-38, 
-                                                -2.11082780964081e-37, 
-                                                5.388108802999411e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 10, 
-                                            "data": [
-                                                0.0003856891170248357, 
-                                                -0.00011511096686795288, 
-                                                -1.1400397798955559e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 11, 
-                                            "data": [
-                                                0.00038569592125608886, 
-                                                -0.00011510069041535903, 
-                                                1.1368215295723198e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 12, 
-                                            "data": [
-                                                2.383961607027416e-37, 
-                                                4.904967808653716e-37, 
-                                                1.096383034709392e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 13, 
-                                            "data": [
-                                                9.360972435178785e-38, 
-                                                -2.1106145249253957e-37, 
-                                                -5.388845134095003e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 14, 
-                                            "data": [
-                                                2.383527701451052e-37, 
-                                                4.904409160029056e-37, 
-                                                -1.0964173585910175e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 15, 
-                                            "data": [
-                                                2.383527701451052e-37, 
-                                                4.904409160029056e-37, 
-                                                -1.0964173585910175e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 16, 
-                                            "data": [
-                                                9.360972435178785e-38, 
-                                                -2.1106145249253957e-37, 
-                                                -5.388845134095003e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 17, 
-                                            "data": [
-                                                9.362948648500154e-38, 
-                                                -2.11082780964081e-37, 
-                                                5.388108802999411e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 18, 
-                                            "data": [
-                                                0.0007580288574090734, 
-                                                0.0002394342450790107, 
-                                                -1.0223576801569937e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 19, 
-                                            "data": [
-                                                2.383961607027416e-37, 
-                                                4.904967808653716e-37, 
-                                                1.096383034709392e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 20, 
-                                            "data": [
-                                                0.000758020680678187, 
-                                                0.00023944213386150378, 
-                                                1.0172566359762188e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 21, 
-                                            "data": [
-                                                0.000758020680678187, 
-                                                0.00023944213386150378, 
-                                                1.0172566359762188e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 22, 
-                                            "data": [
-                                                2.383961607027416e-37, 
-                                                4.904967808653716e-37, 
-                                                1.096383034709392e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 23, 
-                                            "data": [
-                                                2.383527701451052e-37, 
-                                                4.904409160029056e-37, 
-                                                -1.0964173585910175e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 24, 
-                                            "data": [
-                                                2.383527701451052e-37, 
-                                                4.904409160029056e-37, 
-                                                -1.0964173585910175e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 25, 
-                                            "data": [
-                                                9.362948648500154e-38, 
-                                                -2.11082780964081e-37, 
-                                                5.388108802999411e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 26, 
-                                            "data": [
-                                                0.000758020680678187, 
-                                                0.00023944213386150378, 
-                                                1.0172566359762188e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 27, 
-                                            "data": [
-                                                0.000758020680678187, 
-                                                0.00023944213386150378, 
-                                                1.0172566359762188e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 28, 
-                                            "data": [
-                                                9.362948648500154e-38, 
-                                                -2.11082780964081e-37, 
-                                                5.388108802999411e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 29, 
-                                            "data": [
-                                                0.00038569592125608886, 
-                                                -0.00011510069041535903, 
-                                                1.1368215295723198e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 30, 
-                                            "data": [
-                                                0.0007580288574090734, 
-                                                0.0002394342450790107, 
-                                                -1.0223576801569937e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 31, 
-                                            "data": [
-                                                0.0003856891170248357, 
-                                                -0.00011511096686795288, 
-                                                -1.1400397798955559e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 32, 
-                                            "data": [
-                                                2.383961607027416e-37, 
-                                                4.904967808653716e-37, 
-                                                1.096383034709392e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 33, 
-                                            "data": [
-                                                2.383961607027416e-37, 
-                                                4.904967808653716e-37, 
-                                                1.096383034709392e-37
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 34, 
-                                            "data": [
-                                                0.0003856891170248357, 
-                                                -0.00011511096686795288, 
-                                                -1.1400397798955559e-05
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }, 
-                                        {
-                                            "id": 35, 
-                                            "data": [
-                                                9.360972435178785e-38, 
-                                                -2.1106145249253957e-37, 
-                                                -5.388845134095003e-38
-                                            ], 
-                                            "l": 0, 
-                                            "k": 0
-                                        }
-                                    ]
-                                }
-                            ], 
-                            "model_results": {
-                                "model_mass": [
-                                    0, 
-                                    0.0
-                                ], 
-                                "maximum_displacement_magnitude": [
-                                    0, 
-                                    0.0
-                                ], 
-                                "minimum_safety_factor": [
-                                    0, 
-                                    0.0
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
+            }
         }, 
         "fea_results": {
             "meta": {
@@ -1837,210 +2648,7 @@
                     "hash": "", 
                     "branch": ""
                 }
-            }, 
-            "steps": [
-                {
-                    "name": "step-1", 
-                    "increments": [
-                        {
-                            "time": 1.0, 
-                            "dtime": 1.0, 
-                            "model_results": {
-                                "model_mass": [
-                                    0, 
-                                    0.0
-                                ], 
-                                "maximum_displacement_magnitude": [
-                                    0, 
-                                    0.0
-                                ], 
-                                "minimum_safety_factor": [
-                                    0, 
-                                    0.0
-                                ], 
-                                "problem_regions": [
-                                    {
-                                        "name": "high_strain", 
-                                        "regions": [
-                                            {
-                                                "name": "high_strain", 
-                                                "type": "infill", 
-                                                "materials": {
-                                                    "extrusion": "extrusion", 
-                                                    "infill": "infill", 
-                                                    "empty": "empty"
-                                                }, 
-                                                "transform": [
-                                                    1.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    1.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    1.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    1.0
-                                                ], 
-                                                "print_config": {
-                                                    "infill": {}
-                                                }, 
-                                                "vertices": [
-                                                    [
-                                                        -20.0, 
-                                                        -10.0, 
-                                                        10.0
-                                                    ], 
-                                                    [
-                                                        -2.2222222222222285, 
-                                                        -10.0, 
-                                                        10.0
-                                                    ], 
-                                                    [
-                                                        -2.2222222222222285, 
-                                                        -10.0, 
-                                                        -10.0
-                                                    ], 
-                                                    [
-                                                        -20.0, 
-                                                        -10.0, 
-                                                        -10.0
-                                                    ], 
-                                                    [
-                                                        -20.0, 
-                                                        10.0, 
-                                                        10.0
-                                                    ], 
-                                                    [
-                                                        -2.2222222222222285, 
-                                                        10.0, 
-                                                        10.0
-                                                    ], 
-                                                    [
-                                                        -2.2222222222222285, 
-                                                        10.0, 
-                                                        -10.0
-                                                    ], 
-                                                    [
-                                                        -20.0, 
-                                                        10.0, 
-                                                        -10.0
-                                                    ]
-                                                ], 
-                                                "triangles": [
-                                                    [
-                                                        0, 
-                                                        3, 
-                                                        1
-                                                    ], 
-                                                    [
-                                                        2, 
-                                                        1, 
-                                                        3
-                                                    ], 
-                                                    [
-                                                        0, 
-                                                        1, 
-                                                        4
-                                                    ], 
-                                                    [
-                                                        5, 
-                                                        4, 
-                                                        1
-                                                    ], 
-                                                    [
-                                                        1, 
-                                                        2, 
-                                                        5
-                                                    ], 
-                                                    [
-                                                        6, 
-                                                        5, 
-                                                        2
-                                                    ], 
-                                                    [
-                                                        2, 
-                                                        3, 
-                                                        6
-                                                    ], 
-                                                    [
-                                                        7, 
-                                                        6, 
-                                                        3
-                                                    ], 
-                                                    [
-                                                        3, 
-                                                        0, 
-                                                        7
-                                                    ], 
-                                                    [
-                                                        4, 
-                                                        7, 
-                                                        0
-                                                    ], 
-                                                    [
-                                                        4, 
-                                                        5, 
-                                                        7
-                                                    ], 
-                                                    [
-                                                        6, 
-                                                        7, 
-                                                        5
-                                                    ]
-                                                ]
-                                            }
-                                        ]
-                                    }, 
-                                    {
-                                        "name": "low_safety_factor", 
-                                        "regions": [
-                                            {
-                                                "name": "low_safety_factor", 
-                                                "type": "infill", 
-                                                "materials": {
-                                                    "extrusion": "extrusion", 
-                                                    "infill": "infill", 
-                                                    "empty": "empty"
-                                                }, 
-                                                "transform": [
-                                                    1.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    1.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    1.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    0.0, 
-                                                    1.0
-                                                ], 
-                                                "print_config": {
-                                                    "infill": {}
-                                                }, 
-                                                "vertices": [], 
-                                                "triangles": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
+            }
         }
     }, 
     "selectedResult": 0
